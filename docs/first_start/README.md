@@ -1,12 +1,15 @@
 # First start guide
 
-This guide explain how to handle your first start with Airsonic.
+This guide explains how to handle your first time starting up Airsonic-Advanced and will guide you through the process.
 
-## Change Airsonic process user
+## Change Airsonic-Advanced process user
 
-We recommand not to run Airsonic using the root user.
+We strongly advice against running Airsonic-Advanced as root and recommend to create a separate, dedicated user and group instead.
+By example by creating the user airsonic and adding it to the airsonic group. 
+`groupadd airsonic`
+`useradd -m -G airsonic airsonic`
 
-To change this you can create a dedicated user that will run Airsonic.
+To change this you can create a dedicated user that will run Airsonic-Advanced.
 
 > NOTE: Please verify any permissions after you changed the process user.
 
