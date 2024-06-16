@@ -5,19 +5,21 @@ This guide explains how to handle your first time starting up Airsonic-Advanced 
 ## Change Airsonic-Advanced process user
 
 We strongly advice against running Airsonic-Advanced as root and recommend to create a separate, dedicated user and group instead.
-By example by creating the user airsonic and adding it to the airsonic group. 
-`groupadd airsonic`
-`useradd -m -G airsonic airsonic`
 
-To change this you can create a dedicated user that will run Airsonic-Advanced.
+By example create the user airsonic and add it to the airsonic group. 
 
-> NOTE: Please verify any permissions after you changed the process user.
+```
+groupadd airsonic
+useradd -m -G airsonic airsonic
+```
+
+> NOTE: Please verify all permissions, especially in the airsonic home directory, after changing the process user.
 
 ## Set up user accounts
 
-The default username and password for Airsonic is admin. You should absolutely change this to secure your server.
+The default username and password for Airsonic-Advanced is admin. You should absolutely change this immediately to secure your server.
 
-Go to Settings > Users to change this password.
+Go to `Settings` > `Users` to change this password.
 
 In the same page you can also create new user accounts and specify which operations they are allowed to perform.
 
