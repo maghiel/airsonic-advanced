@@ -198,6 +198,17 @@
                 <artifactId>org.eclipse.persistence.moxy</artifactId>
                 <version>4.0.4</version>
             </dependency>
+            <!-- fixes after bump to springboot 3.4.4 -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-jaxb-annotations</artifactId>
+                <version>2.18.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>4.31.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
